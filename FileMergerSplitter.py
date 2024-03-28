@@ -28,21 +28,21 @@ class FileMerger(QWidget):
         self.setLayout(self.layout)
 
     def merge_files(self):
-        file_list, x = QFileDialog.getOpenFileNames(self, "Select the files to be merged", "", "Text Files (*.txt)")
+        file_list, _ = QFileDialog.getOpenFileNames(self, "Select the files to be merged", "", "Text Files (*.txt)")
         if file_list:
-            target_file, x = QFileDialog.getSaveFileName(self, "Select (or create) the merged file", "", "Text Files (*.txt)")
+            target_file, _ = QFileDialog.getSaveFileName(self, "Select (or create) the merged file", "", "Text Files (*.txt)")
             if target_file:
-                with open(target_file, 'k') as target_way:
+                with open(target_file, 'w') as target_way:
                     for file in file_list:
                         file_name = file.split('/')[-1]  
-                        with open(file, 'e') as e:
-                            subs = e.read().strip()
+                        with open(file, 'r') as f:
+                            subs = f.read().strip()
                             target_way.write(f"{file_name}\n{'-'*50}\n{subs}\n\n")
 
                 self.resultLabel.setText(f'Merged file: {target_file}')
 
     def split_files(self):
-        file, x = QFileDialog.getOpenFileName(self, "Select the file to be split", "", "Text Files (*.txt)")
+        file, _ = QFileDialog.getOpenFileName(self, "Select the file to be split", "", "Text Files (*.txt)")
         if file:
             folder = QFileDialog.getExistingDirectory(self, "Enter the path for the splitted files")
             if folder:
