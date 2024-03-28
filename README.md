@@ -1,5 +1,5 @@
 # FileMergerSplitter
-FileMergeSplit.png
+![](FileMergeSplit.png)
 Summary:
 
 This project aims to develop a simple file splitting and merging application using the Python programming language. Created with the PyQt5 library, this application is designed to meet user's needs for splitting or merging text files. The methodology of the project focuses on designing a graphical user interface with PyQt5 and utilizing file processing functions.
