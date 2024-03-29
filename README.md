@@ -3,6 +3,7 @@
 Summary:
 
 This project aims to develop a simple file splitting and merging application using the Python programming language. Created with the PyQt5 library, this application is designed to meet user's needs for splitting or merging text files. The methodology of the project focuses on designing a graphical user interface with PyQt5 and utilizing file processing functions.
+
 Keywords: Python, PyQt5, file processing, file splitting, file merging, PyInstaller, graphical user interface.
 
 1. Introduction
@@ -24,3 +25,5 @@ The application can be launched from the command prompt or by running FileMerger
 5. Conclusion and Future Work
 
 This study demonstrates how a simple file splitter and merger application can be developed using PyQt5. Future updates will focus on expanding file processing capabilities to include splitting and merging functions for ".csv", ".xml", and Excel formatted files (.xls, .xlsx). This will enable users to easily process different file types according to their needs.
+
+Medium article for example usage: https://medium.com/@erenacar3747/a-file-splitter-and-merger-application-filemergersplitter-375da242bed0
