@@ -26,4 +26,4 @@ The application can be launched from the command prompt or by running FileMerger
 
 This study demonstrates how a simple file splitter and merger application can be developed using PyQt5. Future updates will focus on expanding file processing capabilities to include splitting and merging functions for ".csv", ".xml", and Excel formatted files (.xls, .xlsx). This will enable users to easily process different file types according to their needs.
 
-Medium article for example usage: https://medium.com/@erenacar3747/a-file-splitter-and-merger-application-filemergersplitter-375da242bed0
+Medium article for example usage and guide: https://medium.com/@erenacar3747/a-file-splitter-and-merger-application-filemergersplitter-375da242bed0
